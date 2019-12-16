@@ -52,4 +52,7 @@ window.addEventListener("load", () => {
     skycons.play();
     return skycons.set(iconID, Skycons[currentIcon]);
   }
+  if (temperatureDegree.nodeValue < 32) {
+    Snowflakes();
+  }
 });
