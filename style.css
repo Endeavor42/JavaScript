@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Arcade";
+  src: url("ARCADECLASSIC.TTF");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+canvas {
+  margin-left: 80px;
+  margin-top: 120px;
+}
+
+.overlay-text {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #ff6d00;
+  font-family: "Arcade", sans-serif;
+  cursor: pointer;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 4em;
+  }
+}
+
+#restart {
+  color: #2e2e2e;
+  position: absolute;
+  top: 38em;
+  left: 41em;
+  cursor:pointer;
+}
